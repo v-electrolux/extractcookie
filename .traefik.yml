@@ -1,0 +1,15 @@
+displayName: Cookie value extractor
+type: middleware
+
+import: github.com/v-electrolux/extractcookie
+
+summary: |
+  Takes specified cookie value (from Cookie header)
+  and put it in a header you want. You can declare prefix for value,
+  which will be added to cookie value.
+  If there is no such cookie, the header value will not be set
+
+testData:
+  cookieName: test_cookie_with_auth_token
+  headerNameForCookieValue: Authorization
+  cookieValuePrefix: 'Bearer '
